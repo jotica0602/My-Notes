@@ -1,0 +1,1 @@
+- [ ] Agregar los ejemplos de la Conferencia de Vectores Aleatorios Continuos.
