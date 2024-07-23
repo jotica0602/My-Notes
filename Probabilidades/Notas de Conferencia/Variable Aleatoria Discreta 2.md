@@ -19,36 +19,90 @@ x_j, \text{ si } \sum_{i}^{j-1} P_i < U \leq \sum_{i}^{j}P_i\\
 $$
 
 Para el caso en el que $X \sim Geo(p)$ se puede calcular una expresión exacta para las sumas, pues:
+
 $$
-\sum_{i=1}^{j-1}P_i = \sum_{i=1}^{j-1}P(X = x_i) 
+P(X \leq x_{j-1}) = \sum_{i=1}^{j-1}P_i = \sum_{i=1}^{j-1}P(X = x_i) = \sum_{i=1}^{j-1}p(1-p)^{i-1}, 
 $$
+
+> Recordemos que precisamente la sumatoria de probabilidades hasta cierto $x_i$ es como se define la **Función de Distribución**, de ahí que partamos planteando la primera igualdad. 
+
+Y aplicando la fórmula de la suma para una serie geométrica finita:
+
 $$
-= P(X \leq j-1)
+= p\sum_{i=1}^{j-1}(1-p)^{i-1} = p \times \frac{1-(1-p)^{j-1}}{1-(1-p)} = p \times \frac{1-(1-p)^{j-1}}{\cancel{1} - \cancel{1} + p} = \cancel{p}^1 \times \frac{1-(1-p)^{j-1}}{\cancel{p}^1}
 $$
-> Recordemos que justamente esto es lo que plantea la **Función de Distribución**.
+
+$$
+=\boxed {1-(1-p)^{j-1}}
+$$
 
 $$
 = 1 - P(X > j-1)
 $$
-> Por axioma de Kolmogorov. Notemos que $(X > j - 1)$ representa que en los $j-1$ primeros experimentos no haya ocurrido ningún éxito.
+
+> Notemos que $(X > j - 1)$ significa que en los $j-1$ primeros experimentos no haya ocurrido ningún éxito.
+
+Replanteemos las desigualdades:
 
 $$
-= 1 - (1-p)^{j-1}
+1-(1-p)^{j-1} < U \leq 1-(1-p)^{j}
 $$
-Ahora, para encontrar el valor de $j$ usando $U$ :
+
+$$ 
+-(1-p)^{j-1} < U - 1 \leq -(1-p)^j
 $$
-X = min \{j:(1-p)^j \leq U\} 
+
+> Restamos $-1$
+
+$$
+(1 - p)^{j-1} > 1 - U \geq (1 - p)^j
+$$
+
+> Multiplicamos por $-1$ e invertimos las desigualdades
+
+$$
+\log{(1-p)^{j-1}} > \log{(1-U)} \geq \log{(1-p)^j}
+$$
+
+
+$$
+(j-1)\log{(1-p)} > \log{(1-U)} \geq j\log{(1-p)}
+$$
+
+>Por propiedad de los logaritmos: $\log{(a^k)} = k\log{(a)}$ 
+
+$$
+j-1 > \frac{\log{(1-U)}}{\log{(1-p)}} \geq j
+$$
+Ahora analicemos cada desigualdad por separado:
+
+Desigualdad izquierda:
+$$
+j-1 > \frac{\log{(1-U)}}{\log{(1-p)}}
 $$
 
 $$
-= min(j: j \text{ }(1-p) \leq lnU)
+\boxed{j > \frac{\log{(1-U)}}{\log{(1-p)}} + 1}
 $$
+Desigualdad derecha:
+
 $$
-= min\{j : j \geq \frac{ln(U)}{ln(1-p)}\}
+\boxed{\frac{\log{(1-U)}}{\log{(1-p)}} \geq j}
 $$
+
+De estas obtenemos que:
+
 $$
-= [\frac{ln(U)}{ln(1-p)}] + 1
+\frac{\log{(1-U)}}{\log{(1-p)}} \leq j < \frac{\log{(1-U)}}{\log{(1-p)}} + 1 
 $$
+
+$$
+j = \left\lceil \frac{\log{(1-U)}}{\log{(1-p)}} \right\rceil 
+$$
+
+> Como $j$ es una variable aleatoria discreta, ésta debe ser el menor entero mayor que $\frac{\log{(1-U)}}{\log{(1-p)}}$, lo cual coincide con la función techo (ceil) $\left\lceil x \right\rceil$.
+
+
 ## Varianza:
 
 ### Proposición 1:

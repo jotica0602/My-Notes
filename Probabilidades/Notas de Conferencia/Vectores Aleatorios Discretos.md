@@ -140,7 +140,7 @@ $$
 cov(X,Y) = E[XY] - E[X]E[Y]
 $$
 $$
-\rho = \frac{cov(X,Y)}{\sqrt{V(X)V(Y)})}
+\rho = \frac{cov(X,Y)}{\sqrt{V(X)V(Y)}}
 $$
 donde $-1 \leq \rho \leq 1$
 
@@ -156,7 +156,7 @@ donde $-1 \leq \rho \leq 1$
 
 - **$X$ e $Y$ v.a independientes $\implies cov(X,Y) =0$.**
 - **$V(X+Y) = V(X) + V(Y) + 2cov(X,Y)$.**
-- **$X$ e$Y$ v.a independientes $\implies V(X+Y) = V(X) + V(Y)$.**
+- **$X$ e $Y$ v.a independientes $\implies V(X+Y) = V(X) + V(Y)$.**
 ### Definición 7
 
 **Sea $b_j$ un valor de la v.a $Y$ fijo, se denomina distribución condicional de $X$ dado $Y = b_j$ a la variable aleatoria que toma valores $a_i$ con probabilidad:**

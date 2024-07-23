@@ -19,10 +19,10 @@ Generamos un número aleatorio $U$ que está [uniformemente distribuido](#distri
 #### 2) Calcular la Función de Distribución Acumulada Inversa:
 
 ##### En Distribuciones Continuas:
-Para encontrar el valor $x$ correspondiente a $U$, necesitamos la función de distribución acumulada inversa $F_X^{−1}(u)$. Para una variable aleatoria $X$, si $U$ es uniformemente distribuido en $[0, 1]$, entonces $X=F_X^{−1}(U)$ tiene la distribución deseada.
+Para encontrar el valor $x$ correspondiente a $U$, necesitamos la función de distribución acumulada inversa $F_X^{−1}(U)$. Para una variable aleatoria $X$, si $U$ es uniformemente distribuido en $[0, 1]$, entonces $X=F_X^{−1}(U)$ tiene la distribución deseada.
 
 ##### En Distribuciones Discretas:
-En este caso $F_X^{-1}(u)$ es un poco diferente. Aquí usamos una tabla de probabilidades acumuladas para encontrar el intervalo en el que $U$ cae y asignar el valor correspondiente.
+En este caso $F_X^{-1}(U)$ es un poco diferente. Aquí usamos una tabla de probabilidades acumuladas para encontrar el intervalo en el que $U$ cae y asignar el valor correspondiente.
 #### 3) Asignar el Valor de la Variable Aleatoria:
 
 Finalmente, el valor $x$ que encontramos se considera una muestra de la variable aleatoria $X$.
@@ -30,3 +30,11 @@ Finalmente, el valor $x$ que encontramos se considera una muestra de la variable
 # Distribución uniforme
 
 Decimos que un número esta uniformemente distribuido si cada valor dentro de un intervalo especificado tiene la misma probabilidad de ser seleccionado.
+
+## Noción
+
+Simular nos permite de cierta forma observar cuáles son los sucesos con más probabilidad de ocurrir sin tener que hacerlos en la vida real. Un ejemplo de esto es:
+
+Si de un grupo de personas las tomamos de forma aleatoria y de ellas queremos predecir entre sus alturas cuál será la más frecuente (o sea la más probable) para eventos posteriores, este caso es perfectamente simulable.
+
+Darse cuenta de que mientras más variables 

@@ -1,4 +1,4 @@
-# Tema: Simulación de Variables Aleatorias Continuas
+ # Tema: Simulación de Variables Aleatorias Continuas
 
 ## Introducción
 
@@ -6,7 +6,7 @@ Como habíamos visto anteriormente en [Acerca de la Simulación de Variables Ale
 
 ## Método de la Transformada Inversa
 
-Sean $U \sim U(0,1)$ y $F$ una función de distribución contunua y estrictamente creciente, entonces la variable aleatoria:
+Sean $U \sim U(0,1)$ y $F$ una función de distribución continua y estrictamente creciente, entonces la variable aleatoria:
 
 $$
 X = F^{-1}(U)

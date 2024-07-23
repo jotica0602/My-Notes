@@ -154,7 +154,7 @@ $$
 
 **para $k = 1,2,...$**
 
-> - En este enfoque se asume que se realizan infinitas pruebas de Bernoulli independientes y que <u>$X$ representa el número de experimento en el que por primera vez se obutvo éxito</u>.
+> - En este enfoque se asume que se realizan infinitas pruebas de Bernoulli independientes y que $X$ <u>representa el número del experimento en el que por primera vez se obutvo éxito</u>.
 
 ### Definición 5 (Binomial Negativa):
 **Sean $p \in (0,1)$ y $r \in N$, se dice que $X$ tiene Distribución Binomial Negativa con parámetros $r$ y $p$, y se denota $X \sim BN(r,p)$ si:**
@@ -174,8 +174,7 @@ $$
 P(X = k) = \frac{\lambda^ke^{-\lambda}}{k!},
 $$
 
-> Un ejemplo común en la literatura es que el número de client
-> es que llegan a un servidor
+> Un ejemplo común en la literatura es que el número de clientes que llegan a un servidor
 durante un tiempo determinado tiene distribución de Poisson.
 
 **para** $k = 0,1,2,...$

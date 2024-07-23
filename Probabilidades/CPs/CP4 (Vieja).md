@@ -1,3 +1,6 @@
+Alejandro Echevarría Brunet.
+
+# CP\#4: Variable Aleatoria Discreta
 ## Ejercicios de Programación
 ### Ejercicio 1: (ver [Notas de Simulación de Variables Aleatorias](../Notas%20de%20Conferencia/Acerca%20de%20la%20Simulación%20de%20Variables%20Aleatorias))
 
@@ -7,16 +10,31 @@ Desarrolle un algoritmo eficiente para simular una v.a X con función de probabi
 | ---------- | ---- | ---- | ---- | ---- |
 | $P(X=x_i)$ | 0.15 | 0.20 | 0.35 | 0.30 |
 
+
+
 ```python
 import random
-def simulate(x:list[int], px:list[int]) -> int:
+
+def sort(x,px):
+	srt = [(x[i],px[i]) for i in range(len(x))]
+	srt.sort(key = lambda x : x[1])
+	return srt
+
+def simulate(sorted_data) -> int:
 	u = random.random()
-	sum = 0
-	for i in range(len(x)):
-		sum += px[i]
-		if u < sum:
-			return px[i]
-		
+	cummulative = 0
+	
+	for data in sorted_data:
+		cummulative += data[1]
+		if u <= cummulative:
+			return data[0]
+
+x = [1, 2, 3, 4]
+px = [0.15, 0.20, 0.35, 0.30]
+
+sorted_data = sort(x,px)
+samples = [simulate(sorted_data) for _ in range(100)]
+print(samples)
 ```
 
 
@@ -27,6 +45,8 @@ def simulate(x:list[int], px:list[int]) -> int:
 Una moneda es lanzada tres veces. Considere la variable aleatoria definida como el número de caras obtenidas en los tres lanzamientos. Determine:
 - a) Las funciones de probabilidad y de distribución. 
 - b) El valor esperado.
+
+#### Solución:
 
 a) Suponiendo que la moneda sea justa (las probabilidades de obtener cara serían $1/2$) y que se quiere determinar la cantidad de caras o **éxitos** obtenidos en $3$ experimentos independientes de Bernoulli, pues los posibles resultados de cada lanzamiento serían **éxito** o **fracaso**, podemos decir que nuestra variable aleatoria $X$ tiene una Distribución Binomial (ver las notas de la conferencia [Variable Aleatoria Discreta 1](../Notas%20de%20Conferencia/Variable%20Aleatoria%20Discreta%201.md)), o sea $X \sim Bin(n,p)$, donde $n = 3$, $p = \frac{1}{2}$.
 
@@ -101,6 +121,8 @@ si:
 - b) $i = 3$
 
 2.1 - Demuestre que en ambos casos el valor esperado se maximiza cuando $p=\frac{1}{2}$.
+
+#### Solución:
 
 Para calcular ambos valores esperados primeramente debemos hallar las probabilidades de obtener el resultado deseado (**obtener por primera vez $i$ victorias** por un equipo o el otro) en un determinado número de partidas. Para ello podemos hacer uso de la Distribución Binomial Negativa:
 $$
@@ -180,6 +202,9 @@ para cada una de las distribuciones siguientes:
 - b) $X \sim Geo(p)$
 - c) $X \sim Poisson(\lambda)$
 
+
+#### Solución:
+
 a) Si $X \sim Bin(n,p)$ tendremos que:
 
 $$
@@ -207,11 +232,11 @@ $$
 $$
 
 $$
-= p \times \frac{1}{1-(1-p)} = p \times \frac{1}{p} = 1.
+= p \times \frac{1}{1-(1-p)} = p \times \frac{1}{p} = 1. \text{ } \blacksquare
 $$
 > Usamos la fórmula para calcular el resultado de una serie geométrica teniendo que $|p| < 1$
 
-$\blacksquare$
+
 
 c) Si $X \sim Poisson(\lambda)$ tendremos que:
 
@@ -222,7 +247,8 @@ $$
 $$
 = e^{-\lambda} \sum_{i=1}^{\infty}\frac{\lambda^i}{i!} 
 $$
-> Recordemos que $\sum_{n=1}^{\infty} \frac{x^n}{n!} = e^{x}$ 
+> Recordemos que $\sum_{n=1}^{\infty} \frac{x^n}{n!} = e^{x}$
+ 
 $$
 = e^{-\lambda} e^{\lambda} = 1.
 $$
@@ -233,7 +259,8 @@ $\blacksquare$
 
 Si $X \sim Poisson(\lambda)$, demuestre que $E[X] = \lambda$.
 
-**Solución:**
+#### Solución:
+
 $$
 E[X] = \sum_{i=1}^{\infty}a_iP(X=a_i) = \sum_{i=1}^{\infty}i\frac{\lambda^ ie^{-\lambda}}{i!} 
 $$
@@ -241,19 +268,23 @@ $$
 $$
 = e^{-\lambda}\sum_{i=1}^{\infty}\cancel{i}\frac{\lambda^ i}{\cancel{i}(i-1)!}
 $$
+
 > Extraemos  $e^{-\lambda}$ como factor común y reescribimos $i!$ como $i(i-1)!$ 
+
 $$
 = e^{-\lambda}\sum_{i=1}^{\infty}\frac{\lambda^{i-1}\lambda}{(i-1)!}
 $$
+
 > Reescribimos $\lambda^i$ como $\lambda^{i-1} \lambda$ 
+
 $$
 = \lambda e^{-\lambda}\sum_{i=1}^{\infty}\frac{\lambda^{i-1}}{(i-1)!}
 $$
+
 > Extraemos $\lambda$ como factor común de la sumatoria
+
 $$
-= \lambda e^{-\lambda} e^{\lambda} = \lambda.
+= \lambda e^{-\lambda} e^{\lambda} = \lambda. \text{ } \blacksquare
 $$
+
 > Aplicamos la propiedad utilizada en el ejercicio anterior.
-
-$\blacksquare$
-
