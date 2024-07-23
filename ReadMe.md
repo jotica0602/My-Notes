@@ -1,4 +1,4 @@
-A little bit of everything.
+# A little bit of everything.
 
 Use [Obsidian](https://obsidian.md/) to read this notes.
 
