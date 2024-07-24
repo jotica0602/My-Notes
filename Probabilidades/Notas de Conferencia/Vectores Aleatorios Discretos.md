@@ -98,7 +98,9 @@ En el [Ejemplo 1](#ejemplo-1), podemos comprobar que la función de probabilidad
 | $a_i$        | 0             | 1             |
 | ------------ | ------------- | ------------- |
 | $P(X = a_i)$ | $\frac{1}{2}$ | $\frac{1}{2}$ |
+
 (Fijamos cada fila de $X$ y sumamos todos los valores de las columnas de $Y$)
+
 y para $Y$:
 
 | $b_j$        | 1             | 2             | 3             | 4             | 5             | 6             |
@@ -107,7 +109,7 @@ y para $Y$:
 
 ### Definición 5
 
-**Se dice que las v.a discretas $X$ e $Y$ son independientes si parat odos los valores admisibles $(a_i,b_j), \text{ } i,j \in \mathbb{N}$, se cumple la siguiente condición:**
+**Se dice que las v.a discretas $X$ e $Y$ son independientes si para todos los valores admisibles $(a_i,b_j), \text{ } i,j \in \mathbb{N}$, se cumple la siguiente condición:**
 $$
 P(X = a_i, Y = b_j) = P(X = a_i)P(Y = b_j).
 $$
@@ -130,7 +132,7 @@ $$
 E[g(X,Y)] = \sum_{i=1}^\infty\sum_{j=1}^\infty  g(a_i,b_j)P(X = a_i,b_j).
 $$
 ### Proposición 3
-**Sean $X$ e $Y$ variables aleatorias independientes, entonces $E[XY] = E[X]E[Y]$. La demostración de esta proposición ya se hizo en las propiedades del valor esperado en [Variable Aleatoria Discreta](Variable%20Aleatoria%20Discreta%201#proposición-4).
+**Sean $X$ e $Y$ variables aleatorias independientes, entonces $E[XY] = E[X]E[Y]$. La demostración de esta proposición ya se hizo en las propiedades del valor esperado en [Variable Aleatoria Discreta](Variable%20Aleatoria%20Discreta%201#proposición-4).**
 
 ### Definición 6
 
