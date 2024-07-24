@@ -331,12 +331,11 @@ $$
 $$
 
 Aplicando el método de integración por partes, sean: 
-$
-u = x^2 \\ 
-dv = \lambda e^{-\lambda x}dx \\
-du = 2xdx \\
-v = -e^{-\lambda x}
-$
+
+$u = x^2$ 
+$dv = \lambda e^{-\lambda x}dx$ 
+$du = 2xdx$ 
+$v = -e^{-\lambda x}$
 
 $$
 uv - \int_{0}^{+\infty}vdu
@@ -351,12 +350,12 @@ $$
 $$
 
 Volviendo a aplicar el método de integración por partes, sean:
-$
-u = x \\
-dv = e^{-\lambda x} \\
-du = dx \\ 
-v = -\frac{1}{\lambda} e^{-\lambda x}
-$
+
+$u = x$ 
+$dv = e^{-\lambda x}$ 
+$du = dx$ 
+$v = -\frac{1}{\lambda} e^{-\lambda x}$
+
 
 $$
 = -x^2e^{-\lambda x} + 2 \left( uv - \int_{0}^{+\infty}vdu \right) 
