@@ -49,7 +49,7 @@ $$
 E[X] = 2 * (0.1 + 0 + 0.3) + 4 * (a + 0.2 + 0) + 6 * (0 + 0.2 + b) = 3.8 
 $$
 
-> Recordemos que para que $P(X = x_i) = \sum_{s:X(s) = x_i}^{}P(s)$.
+> Recordemos que  $P(X = x_i) = \sum_{s:X(s) = x_i}^{}P(s)$.
 
 $$
 \implies 4a + 6b = 1
@@ -159,12 +159,12 @@ En los casos en los que un amigo reciba 3 cartas significa que todos le enviaron
 
 Preguntar esta parte
 
-|Y\X|        0      |       1       |       2       |       3       |
-|---|---------------|---------------|---------------|---------------|
-|0  |$\frac{4}{81}$ |$\frac{10}{81}$|$\frac{8}{81}$ |$\frac{2}{81}$ |
-|1  |$\frac{10}{81}$|$\frac{17}{81}$|$\frac{8}{81}$ |$\frac{1}{81}$ |
-|2  |$\frac{8}{81}$ |$\frac{8}{81}$ |$\frac{2}{81}$ | 0             |
-|3  |$\frac{2}{81}$ |$\frac{1}{81}$ | 0             | 0             |
+| Y\X | 0               | 1               | 2              | 3              |
+| --- | --------------- | --------------- | -------------- | -------------- |
+| 0   | $\frac{4}{81}$  | $\frac{10}{81}$ | $\frac{8}{81}$ | $\frac{2}{81}$ |
+| 1   | $\frac{10}{81}$ | $\frac{17}{81}$ | $\frac{8}{81}$ | $\frac{1}{81}$ |
+| 2   | $\frac{8}{81}$  | $\frac{8}{81}$  | $\frac{2}{81}$ | 0              |
+| 3   | $\frac{2}{81}$  | $\frac{1}{81}$  | 0              | 0              |
 
 a) Probabilidad Marginal de $Y$:
 

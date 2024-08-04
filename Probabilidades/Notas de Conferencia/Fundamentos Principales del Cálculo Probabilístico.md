@@ -5,23 +5,25 @@
 
 **Modos de Convergencia:**
 
-- Casi segura: $X_n \to_{n \to \infty}^{c.s} X$ ssi $P({\omega \in \Omega : Xn(\omega) \to_{n \to \infty} X(\Omega)}) = 1.$
+- Casi segura: $X_n \to_{n \to \infty}^{c.s} X$ ssi $P({\omega \in \Omega : Xn(\omega) \to_{n \to \infty} X(\omega)}) = 1.$
 
-- En probabilidad: $X_n \to_{n \to \infty}^p X$ ssi $\forall \varepsilon > 0, \lim_\limits{n \to \infty} P(|X_n - X| > \varepsilon) = 0.$ 
+- En probabilidad: $X_n \to_{n \to \infty}^p X$ ssi $\forall \varepsilon > 0, \lim_{n \to \infty} P(|X_n - X| > \varepsilon) = 0.$ 
 
 ## Leyes de los Grandes Números
 
 ### Ley Fuerte de los Grandes Números (LFGN):
 
 $$
-\frac{1}{n} \sum_{i=1}^{n}X_i - \frac{1}{n}E[X_i] \to^{c.s} 0
+\frac{1}{n} \sum_{i=1}^{n}X_i - \sum_{i=1}^{n}\frac{1}{n}E[X_i] \to^{c.s} 0
 $$
-
+> Para valores suficientemente grandes $n$, la sucesión tiende a su valor esperado.
 ### Ley Débil de los Grandes Números:
 
 $$
-\frac{1}{n} \sum_{i=1}^{n}X_i - \frac{1}{n}E[X_i] \to^{p} 0
+\frac{1}{n} \sum_{i=1}^{n}X_i - \sum_{i=1}^{n}\frac{1}{n}E[X_i] \to^{p} 0
 $$
+> Para valores suficientemente grandes $n$, la sucesión tiende a su valor esperado en probabilidad.
+
 ## Teoremas
 
 - **Khinchin:** $\{X_n\}$ sucesión de variables independientes e igualmente distribuidas (iid) tales que $E[X_i] = \mu < +\infty, \text{ } i=1,2,... \implies X_n$ cumple **LFGN**.
