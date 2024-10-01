@@ -132,6 +132,7 @@ $$
 E[g(X,Y)] = \sum_{i=1}^\infty\sum_{j=1}^\infty  g(a_i,b_j)P(X = a_i,b_j).
 $$
 ### Proposición 3
+
 **Sean $X$ e $Y$ variables aleatorias independientes, entonces $E[XY] = E[X]E[Y]$. La demostración de esta proposición ya se hizo en las propiedades del valor esperado en [Variable Aleatoria Discreta](Variable%20Aleatoria%20Discreta%201#proposición-4).**
 
 ### Definición 6

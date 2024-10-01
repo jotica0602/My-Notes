@@ -26,7 +26,7 @@ $$
 	
 - **El cuerpo**: está formado por un conjunto finito de tuplas, el cual varía en el tiempo. Cada tupla, a su vez está formada por un conjunto de pares atributo-valor.
 	$$\set{(A_1:V_{i1}),(A_2:V_{i2}),\dots, (A_n:V_{in})}, (i = 1,2,\dots,m)$$
-	tal que $m$ es el número de tuplas en el conjunto $V_{ij} \in D_j$ para todo par $(A_j:V_{ij})$ con $j = 1,2,\dots,n$ 
+	tal que $m$ es el número de tuplas en el conjunto y $n$ es el número de atributos $V_{ij} \in D_j$ para todo par $(A_j:V_{ij})$ con $j = 1,2,\dots,n$ 
 	(A nivel de tabla $i$ sería el número de la fila y $j$ el número de columna)
 
 
@@ -60,7 +60,6 @@ Donde los pares atributo-dominio $(A_i,D_i)$ son:
 
 **Cuerpo:**
 
-
 | ID_Estudiante | Nombre | Apellido | Edad | Carrera      |
 | ------------- | ------ | -------- | ---- | ------------ |
 | 1             | Ana    | Pérez    | 21   | Ingeniería   |
@@ -88,6 +87,8 @@ Un conjunto de uno o más atributos $K = \set{A_1,A_2,\dots,A_n}$ es una llave c
 
 Es una de las llaves candidatas que se selecciona como llave de la relación.
 
+> Por tanto no es única. 
+
 ## Llave Foránea
 
 Un conjunto de uno o más atributos $F = \set{A_1,A_2,\dots,A_n}$ de una relación $R$, correspondientes a los dominios $D_1,D_2,\dots,D_n$ respectivamente, es una llave foránea referente a la relación $R'$ si:
@@ -98,7 +99,7 @@ Una tupla de $t \in R$ referencia a una tupla $t' \in R'$ si el valor de $A_i$ e
 
 **Ejemplo:**
 
-Tabla: Pedidos $(R)$^pedidos
+Tabla: Pedidos $(R)$^1
 
 | PedidoID | Fecha      | ClienteID |
 |----------|------------|-----------|
@@ -115,7 +116,7 @@ Tabla: Clientes $(R')$
 | 1         | Juan Pérez | Calle 123   |
 | 2         | Ana García | Avenida 456 |
 | 3         | Luis Gómez | Plaza 789   |
-En la tabla [[Modelo Relacional#^pedidos]], la tupla t: $\set{(\text{PedidoID},101),(\text{Fecha},2023-01-15),(\text{ClienteID},1)}$ referencia a la tupla  $t'$: $\set{(\text{ClienteID},1),(\text{Nombre},\text{Juan Pérez}),(\text{Calle},123)}$, donde el valor $A_3:\text{ClienteID}$ de $t$ es igual al valor $B_1 = \text{ClienteID}$ de la tupla $t'$.
+En la tabla [[Modelo Relacional#^1]], la tupla t: $\set{(\text{PedidoID},101),(\text{Fecha},2023-01-15),(\text{ClienteID},1)}$ referencia a la tupla  $t'$: $\set{(\text{ClienteID},1),(\text{Nombre},\text{Juan Pérez}),(\text{Calle},123)}$, donde el valor $A_3:\text{ClienteID}$ de $t$ es igual al valor $B_1 = \text{ClienteID}$ de la tupla $t'$.
 
 ## Esquema de una relación
 
@@ -225,7 +226,7 @@ Una transacción es un conjunto de operaciones que modifican el estado de la bas
 2) La relación debe de avisar al resto de relaciones que un valor de llave primaria se va a eliminar.
 3) Las relaciones que referencian a la tupla eliminada tienen tres opciones:
 	1) Detener la eliminación.
-	2) Hacer el valor de la llave foránea.
+	2) Hacer nulo el valor de la llave foránea.
 	3) Eliminar las tuplas que utilicen dicho valor de llave foránea.
 ### Actualizar
 
@@ -306,8 +307,6 @@ Relación $S$:
 | 2                     | 3              |
 
 > Aquí sucede lo mismo con las tuplas $\set{(\text{A}:2),(\text{B}:3)}$ de $R$ y $\set{(\text{A}:2),(\text{B}:4)}$ de $S$, cuya intersección resulta en $\set{(\text{A}:2),(\text{B}:3)}$.  
-
-
 
 ## Operaciones que remueven parte de una relación
 
@@ -493,7 +492,9 @@ Relación $R \Join S:$
 | 1                     | 2              | 5              | 6              |
 | 3                     | 4              | 7              | 8              |
 
-> Natural Join a fin de cuentas lo que hace es aplicar un producto cartesiano entre dos relaciones y de este proyectar las tuplas cuyas cabeceras tengan igual valor.  
+> - Esta operación solo puede ser realizada si en ambas tablas hay al menos un atributo común y el nombre y dominio de los atributos es el mismo.
+> - Debe satisfacerse la igualdad para todos los atributos comunes.
+
 ### Theta Join ($\theta$-Join)
 
 Sean $R$ y $S$ dos relaciones, no necesariamente distintas, definimos el $\theta$-Join de $R$ y $S$ como:

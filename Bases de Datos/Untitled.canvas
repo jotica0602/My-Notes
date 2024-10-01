@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"4ae2a4545cfb1c4e","type":"text","text":"# Diseño Intuitivo","x":-120,"y":-520,"width":284,"height":68},
+		{"id":"212a80ecf2c1929f","type":"text","text":"## Objetivo\n1. Transformar el diseño conceptual descrito por el **MERX** en un diseño lógico basado en el **Modelo Relacional**\n2. Poder utilizar el diseño lógico obtenido para responder las preguntas del usuario.","x":320,"y":-609,"width":480,"height":246},
+		{"id":"dda8a0c29964e0d6","type":"text","text":"## Algoritmo del diseño Intuitivo\n\n1. Convertir cada conjunto de entidades en una relación con el mismo número de atributos.\n2. Convertir cada interrelación en una relación cuyos atributos son las llaves primarias de las relaciones que representan los conjuntos de entidades conectados.","x":-228,"y":-320,"width":500,"height":227}
+	],
+	"edges":[
+		{"id":"8d21dbc7cf72dd15","fromNode":"4ae2a4545cfb1c4e","fromSide":"right","toNode":"212a80ecf2c1929f","toSide":"left"},
+		{"id":"9f4a08c1b91a727b","fromNode":"4ae2a4545cfb1c4e","fromSide":"bottom","toNode":"dda8a0c29964e0d6","toSide":"top"}
+	]
+}

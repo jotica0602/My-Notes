@@ -140,7 +140,7 @@ Sea un esquema relacional $R(U,F):$
 
 ## Clausura de un conjunto de atributos
 
-Sea un esquema relacional $R(U,F)$, un conjunto de atributos $X$ tal que $X \subseteq U$. La clausura del conjunto de atributos $X$ con respecto a un conjunto de dependencias funcionales $F$, denotada por $X_F^+$ o abreviadamente $X^+$, es el conjunto de atributos simples que se determina funcionalmente por $X$ a partir de las dependencias funcionales de $F$.
+Sea un esquema relacional $R(U,F)$, un conjunto de atributos $X$ tal que $X \subseteq U$. La clausura del conjunto de atributos $X$ con respecto a un conjunto de dependencias funcionales $F$, denotada por $X_F^+$ o abreviadamente $X^+$, es el conjunto de atributos **simples** que se determina funcionalmente por $X$ a partir de las dependencias funcionales de $F$.
 
 $$
 X_F^+ = \set{A_i \in U \, | \, F \models X \to A_i}
@@ -174,7 +174,7 @@ La primera idea intuitiva sería computar $F^+$, pero ¿es realmente viable hace
 ¿Cuántas dependencias funcionales **triviales** existen en $F^+$?
 - Sea un conjunto de atributos $X$ se tiene que $X \to X', \, \forall X' : X' \subseteq X, X' \neq \emptyset$
 - El conjunto de dependencias funcionales triviales cuyo determinante es $X$ tiene $2^{|X|} - 1$ elementos.
-- La cantidad de dependencias funcionales triviales con respecto a la cantidad de atributos de $U$.
+- La cantidad de dependencias funcionales triviales con respecto a la cantidad de atributos de $U$ es exponencial.
 
 Una vía más eficiente sería utilizar la clausura del conjunto de atributos $X$.
 
@@ -199,5 +199,4 @@ Sea $K$ un conjunto de atributos $\set{A_1,A_2,\dots,A_n}$ de un esquema relacio
 2. **Minimalidad**: Ningún subconjunto propio de $K$ tiene la propiedad de unicidad.
 
 El conjunto de atributos $X$ cumple la unicidad en $R(U,F)$ si y solo si $X_F^+ = U.$
-
 

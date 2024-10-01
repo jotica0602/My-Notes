@@ -1,0 +1,1 @@
+- [x] Preguntar cómo funciona exactamente el natural join.

@@ -396,12 +396,12 @@ E[X] = \int_{0}^{+\infty}xf(x)dx = \int_{0}^{+\infty}x\lambda e^{-\lambda x} dx
 $$
 
 Aplicando el método de integración por partes, sean:
-$
-u = x \\
-du = dx \\
-dv = \lambda e^{-\lambda x} dx \\
-v = -e^{-\lambda x}
-$
+
+$u = x$
+$du = dx$
+$dv = \lambda e^{-\lambda x} dx$
+$v = -e^{-\lambda x}$
+
 
 $$
 = uv - \int_{0}^{+\infty}vdu

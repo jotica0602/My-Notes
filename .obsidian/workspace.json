@@ -4,47 +4,56 @@
     "type": "split",
     "children": [
       {
-        "id": "ab5c0ff98f2b7405",
+        "id": "17afcd46ef603b46",
         "type": "tabs",
         "children": [
           {
-            "id": "ac93f00375ad9718",
+            "id": "13768fc991ad3225",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bases de Datos/Tercera Forma Normal.md",
+                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Continua.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d03fe996af996fd5",
+            "id": "d7f15e1fac220ae4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 2.md",
+                "file": "ToDo.md.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f7aa4ed2b0669c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bases de Datos/Modelo Relacional.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "76e76cc9265a75b6",
+            "id": "f9d791bf35dd63e6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Bases de Datos/Dependencias Funcionales.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2024-09-28 18.28.58.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#asd",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 2.md",
+                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Continua.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 2.md",
+                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Continua.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 2.md"
+                "file": "Probabilidades/Notas de Conferencia/Variable Aleatoria Continua.md"
               }
             }
           }
@@ -173,34 +182,49 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d03fe996af996fd5",
+  "active": "13768fc991ad3225",
   "lastOpenFiles": [
-    "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 1.md",
+    "Probabilidades/CPs/CP9.md",
     "Probabilidades/CPs/CP8.md",
     "Probabilidades/CPs/CP6 (Vieja).md",
+    "Probabilidades/Notas de Conferencia/Simulación de Variables Aleatorias Continuas.md",
+    "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 1.md",
+    "Probabilidades/CPs/CP10.md",
+    "Probabilidades/Notas de Conferencia/Fundamentos Principales del Cálculo Probabilístico.md",
     "Probabilidades/CPs/CP5 (Vieja).md",
     "Probabilidades/CPs/CP4 (Vieja).md",
-    "Probabilidades/Notas de Conferencia/Simulación de Variables Aleatorias Continuas.md",
+    "Probabilidades/Notas de Conferencia/Vectores Aleatorios Continuos.md",
+    "Probabilidades/Notas de Conferencia/Vectores Aleatorios Discretos.md",
     "ToDo.md.md",
-    "Bases de Datos/Tercera Forma Normal.md",
-    "Notes on C/notes.jnb",
-    "Notes on C/Must to know.md",
-    "Notes on C",
-    "Bases de Datos/Modelo Relacional.md",
+    "Probabilidades/Notas de Conferencia/Variable Aleatoria Continua.md",
+    "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 2.md",
+    "Probabilidades/Notas de Conferencia/Axiomas de Kolmogorov.md",
+    "Bases de Datos/Conceptos importantes.md",
     "Bases de Datos/Dependencias Funcionales.md",
-    "EDA/EDAI/CP1.md",
-    "ReadMe.md",
-    "EDA/CP.md",
-    "EDA/Untitled.md",
+    "Superllave.md",
+    "SCC^razonamiento.md",
+    "SCC^razonamienti.md",
+    "Bases de Datos/Modelo Relacional.md",
+    "Bases de Datos/Tercera Forma Normal.md",
+    "Excalidraw/Drawing 2024-09-28 18.28.58.excalidraw.md",
+    "Bases de Datos/MC Algebra Relacional.canvas",
+    "Bases de Datos/Dudas.md",
+    "Bases de Datos/MC Modelo Relacional.canvas",
+    "Bases de Datos/Untitled.canvas",
+    "Bases de Datos/MC Algebra Relacional.md",
+    "EDA/EDAII/Práctica/Programación Dinámica en DAG.md",
+    "EDA/EDAII/Teoría/Mapa Conceptual.canvas",
+    "EDA/EDAII/Práctica",
+    "EDA/EDAII/Teoría",
+    "Teoría de Grafos/Mapa Conceptual.canvas",
+    "Probabilidades/CPs/Regiones/region.png",
+    "Teoría de Grafos",
+    "Notes on C/notes.jnb",
+    "Notes on C",
     "EDA/EDAII",
     "EDA/EDAI",
-    "Excalidraw/Drawing 2024-08-03 00.26.25.excalidraw.md",
-    "Untitled.canvas",
     "EDA",
-    "Excalidraw/Drawing 2024-08-02 22.01.16.excalidraw.md",
     "Excalidraw",
-    "Probabilidades/CPs/CP9.md",
-    "Probabilidades/CPs/CP10.md",
     "Pasted image 20240802012018.png",
     "Bases de Datos/modelo_relacional/Pasted image 20240802003518.png",
     "Pasted image 20240802012413.png",
@@ -210,26 +234,11 @@
     "Pasted image 20240802012301.png",
     "Pasted image 20240802012042.png",
     "Pasted image 20240802011833.png",
-    "Pasted image 20240802011806.png",
     "asdf.tex",
-    "Bases de Datos/modelo_relacional",
-    "Modelo Relaciona.md",
-    "Probabilidades/Notas de Conferencia/Vectores Aleatorios Discretos.md",
-    "Bases de Datos",
-    "Probabilidades/Notas de Conferencia/Vectores Aleatorios Continuos.md",
-    "Probabilidades/Notas de Conferencia/Variable Aleatoria Discreta 2.md",
-    "To Do/Untitled.md",
-    "To Do",
-    "Probabilidades/Notas de Conferencia/Fundamentos Principales del Cálculo Probabilístico.md",
-    "Probabilidades/Notas de Conferencia/Axiomas de Kolmogorov.md",
     "Untitled 9.canvas",
     "Untitled 2.canvas",
     "Untitled 8.canvas",
     "Untitled 7.canvas",
-    "Untitled 6.canvas",
-    "Untitled 5.canvas",
-    "Untitled 4.canvas",
-    "Untitled 3.canvas",
-    "Untitled 1.canvas"
+    "Untitled 6.canvas"
   ]
 }

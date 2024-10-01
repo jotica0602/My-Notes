@@ -100,7 +100,7 @@ F_X(x) = P(X \leq x) = \sum_{x_i \leq x} P(X = x_i).
 $$
 
 #### Nota
-> La función de distribucion nos da la probabilidad de que $X$ tome valores menores o iguales que el $x$ fijado.
+> La función de distribución nos da la probabilidad de que $X$ tome valores menores o iguales que el $x$ fijado.
 
 #### Ejemplo 2: 
 En el [Ejemplo 1](#ejemplo-1), se obtiene que la función de distribución es la siguiente:
@@ -143,11 +143,13 @@ $$
 $$P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}$$
 para $k = 0,1,2,...,n$.
 
-> - La v.a binomial <u>representa la cantidad de éxitos obtenidos en $n$ experimentos de Bernoulli independientes</u>. $\\$
+> - La v.a binomial <u>representa la cantidad de éxitos obtenidos en</u> $n$ <u>experimentos de Bernoulli independientes</u>.
 > - Si se define $X_i \sim Ber(p)$ independientes, entonces: $X = X_1 + X_2 + ... + X_n$
 
 ### Definición 4 (Geométrica):
+
 **Sea $p \in (0,1)$, se dice que $X$ tiene Distribución Geométrica con parámetro $p$ y se denota $X \sim Geo(p)$ si:**
+
 $$
 P(X = k) = p(1-p)^{k-1}
 $$

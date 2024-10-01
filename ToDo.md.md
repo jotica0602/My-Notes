@@ -18,12 +18,11 @@
 - [ ] Hacer todas las CPS
 
 # Sistemas Operativos
-- [ ] Hacer el Proyecto
+- [x] Hacer el Proyecto
 
 # Probabilidades
 - [ ] Simulación
 ## Puntualidades
-- [ ] Agregar los ejemplos de la Conferencia de Vectores Aleatorios Continuos.
 - [ ] Revisar bien todas las propiedades de Valor Esperado
 - [ ] Que significan E[XY], E[X,Y]
 - [ ] Cuando es aplicable E[X-Y] etc etc

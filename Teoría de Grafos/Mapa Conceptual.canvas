@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"3ade4cb4793478d2","type":"text","text":"#  Definiciones Básicas \n\n1) Camino: Secuencia de $k$ vértices $<v_1,v_2,...,v_k>$ en la cual $\\langle v_i,v_{i+1}\\rangle \\in E(G)$.\n2) Camino cerrado: Camino en el que el primer y último vértice coinciden.\n3) Camino simple: Un camino simple es aquel que no repite vértices.\n4) Ciclo: Camino cerrado donde los únicos vértices iguales son el primero y el último y además, su longitud es al menos 3.\n5) Distancia entre dos vértices: Es la longitud del camino simple más corto entre ellos. Se denota por $D(v,w)$.\n6) Diámetro: $Diámetro(G) = max\\set{D(v,w) | v,w \\in V(G)}$.\n7) Grafo conexo: Aquel en el que $\\forall v,w \\in V(G)$ existe un camino simple que los une.\n8) Subgrafo: Sean $G$ y $H$ grafos, decimos que $H$ es subgrafo de $G$ si:\n\t- $V(H) \\subseteq V(G)$\n\t- $E(H) \\subseteq E(G)$\n\t- $\\forall \\langle v,w \\rangle \\in E(H) \\implies v,w \\in V(G)$\n9) Componente Conexa: Es un subgrafo conexo maximal de $G$ \n10) Subgrafo Inducido: \n- Conjunto independiente: Es un subconjunto de de los vértices de un grafo cuyos vértices son mutuamente no adyacentes.\n- Grafo Bipartito: Un grafo $G = \\langle V,E \\rangle$ es bipartito si $V$ se puede particionar en dos conjuntos independientes $B$ y $N$ de forma tal que entre los elementos de ambos conjuntos hay al menos una arista. ","x":-1120,"y":-440,"width":640,"height":720},
+		{"id":"cbae7657fb3fdaf6","type":"text","text":"# Teoremas Básicos","x":-400,"y":-520,"width":447,"height":720},
+		{"id":"f308b1025afbbaee","x":-1026,"y":378,"width":250,"height":60,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"96a4298f3acd2ca6","fromNode":"3ade4cb4793478d2","fromSide":"right","toNode":"cbae7657fb3fdaf6","toSide":"left","color":"5"},
+		{"id":"294025fab07674a6","fromNode":"3ade4cb4793478d2","fromSide":"bottom","toNode":"f308b1025afbbaee","toSide":"top"}
+	]
+}
